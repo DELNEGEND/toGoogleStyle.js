@@ -1,7 +1,4 @@
-// load Google Sans font from local
-loadExternalFont(["Google Sans", './GoogleSans-Regular.otf', './GoogleSans-Bold.otf', './GoogleSans-Italic.otf']);
-
-// Magics
+// Main function
 const _toGoogleStyle = selector => {
 
   // Take content inside div/span.selector and convert it into string, I called this the selected string
