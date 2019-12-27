@@ -20,7 +20,7 @@ B. Không bắt buộc<br>
 
 ### Thêm thẻ &#x3C;script&#x3E; này vào DOM (nên dùng cách này)
 ```html
-<script src="https://cdn.jsdelivr.net/gh/delnegend/toGoogleStyle.js/toGoogleStyle_v1.0.min.js" integrity="sha384-GDBvWvpfjIeVeexz3KmFNGtUMrnFHBOZdQ9UU2VTO1WndXIlsfm3gEBmtXLn3kWW" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/delnegend/toGoogleStyle.js/toGoogleStyle_v1.1.min.js" integrity="sha384-CsojGvi0BrX/Os+I75n6Tb3/ZgcazqptVr+FZjWCoxTPSXAC8ztx4/X8h4sbVvMW" crossorigin="anonymous"></script>
 ```
 
 ### Hoặc
