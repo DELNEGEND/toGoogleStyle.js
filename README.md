@@ -1,8 +1,6 @@
 # toGoogleStyle.js
 
-### Click here for English (comming soon?)
-
-## Thêm 2 cái này vào phần `<head></head>`
+## Link 2 script vào phần `<head></head>`
 ### jQuery
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
@@ -12,7 +10,7 @@
 <script src="https://cdn.jsdelivr.net/gh/delnegend/toGoogleStyle.js@1.0/toGoogleStyle.min.js" integrity="sha384-CsojGvi0BrX/Os+I75n6Tb3/ZgcazqptVr+FZjWCoxTPSXAC8ztx4/X8h4sbVvMW" crossorigin="anonymous"></script>
 ```
 
-## Tải phông chữ này xuống và sao chép vào cùng thư mục với file index.html
+## Tải phông chữ này xuống và sao chép vào thư mục gốc
 A. Bắt buộc<br>
 • [GoogleSans-Bold](https://github.com/DELNEGEND/toGoogleStyle.js/blob/master/GoogleSans-Bold.otf "Ấn vào để download")
 
@@ -22,9 +20,7 @@ B. Tuỳ chọn<br>
 
 ## Thêm font vào HTML
 
-- Cách 1: sử dụng [**loadExternalFont**](https://github.com/DELNEGEND/loadExternalFont.js "loadExternalFont repository"), ấn vào để xem chi tiết.
-- Cách 2: sử dụng CSS
-
+- Cách 1: sử dụng CSS *(recommended)*
 ```css
 @font-face {
   font-family: Google Sans;
@@ -33,31 +29,28 @@ B. Tuỳ chọn<br>
        url('./GoogleSans-Italic');
 }
 ```
+- Cách 2: sử dụng [**loadExternalFont**](https://github.com/DELNEGEND/loadExternalFont.js "loadExternalFont repository").
 
 ## Hướng dẫn sử dụng
 
-**1. Tự "bịa" ra 1 class nào đó rồi gán nó vào tất cả những thẻ div/span muốn biến hoá thành Google style, ví dụ như**
+**1. Gán 1 class bất kỳ vào element chứa text cần convert thành GoogleStyle, ví dụ**
 
 ```html
-<div class=".j2team_chang_han_the">Google</div>
-<span class=".j2team_chang_han_the">Lorem Ipsum gì gì đấy...</span>
+<div class=".googleStyle">Google</div>
+<span class=".toGoogleStyle">Lorem Ipsum gì gì đấy...</span>
 ```
 
 **2. Chạy hàm này trong phần footer với param như dưới**
-
 ```javascript
 toGoogleStyle('<tên class>','<cỡ chữ>','<kiểu chữ>')
 ```
+- Tên class (string, bắt buộc): class vừa đặt ở bước trên
+- Cỡ chữ (integer, không bắt buộc): mặc định là 40
+- Kiểu chữ (string, không bắt buộc): mặc định là 'bold', có thể để thành 'regular', 'italic' hoặc 'bolditalic' nhưng phải copy thêm 2 font đã đề cập trên
 
-- Tên class (dạng string, bắt buộc): .j2team_chang_han_the
-
-- Cỡ chữ (dạng integer, không bắt buộc): mặc định là 40
-
-- Kiểu chữ (dạng string, không bắt buộc): mặc định là 'bold', có thể để thành 'regular', 'italic' hoặc 'bolditalic' nhưng phải cài thêm 2 font đã đề cập trên
-
-  *Ví dụ*
+*Ví dụ*
 ```Javascript
-toGoogleStyle('.abcxyz')
-toGoogleStyle('.aaaaaaaa',69)
-toGoogleStyle('.j2team_chang_han_the',96,'italic')
+toGoogleStyle('.googleStyle')
+toGoogleStyle('.googleStyle',69)
+toGoogleStyle('.toGoogleStyle',96,'italic')
 ```
