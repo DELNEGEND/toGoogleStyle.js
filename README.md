@@ -1,5 +1,7 @@
 # toGoogleStyle.js
 
+[English version](https://github.com/DELNEGEND/toGoogleStyle.js/blob/master/README-en.md)
+
 ## Thêm script vào phần `<head></head>`
 ```html
 <script src="https://cdn.jsdelivr.net/gh/delnegend/toGoogleStyle.min.js@2.0/toGoogleStyle.min.js"></script>
