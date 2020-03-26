@@ -74,4 +74,4 @@ const toGoogleStyle = {
   },
 };
 
-// toGoogleStyle('.google_style');
+// toGoogleStyle.init('.google_style');

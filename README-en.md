@@ -2,7 +2,7 @@
 
 ## Add this to `<head></head>`
 ```html
-<script src="https://cdn.jsdelivr.net/gh/delnegend/toGoogleStyle.js@1.0/toGoogleStyle.min.js" integrity="sha384-CsojGvi0BrX/Os+I75n6Tb3/ZgcazqptVr+FZjWCoxTPSXAC8ztx4/X8h4sbVvMW" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/delnegend/toGoogleStyle.min.js@2.0/toGoogleStyle.min.js"></script>
 ```
 
 ## Import fonts from GoogleSans folder to your website ([how to](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face))
