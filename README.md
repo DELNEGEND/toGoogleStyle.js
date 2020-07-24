@@ -1,14 +1,12 @@
 # toGoogleStyle.js
 
-[English version](https://github.com/DELNEGEND/toGoogleStyle.js/blob/master/README-en.md)
+[English version](README-en.md)
 
-## Thêm script vào phần `<head></head>`
+## Thêm 2 dòng này vào phần `<head></head>`
 ```html
-<script src="https://cdn.jsdelivr.net/gh/delnegend/toGoogleStyle.min.js@2.0/toGoogleStyle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/DELNEGEND/fonts@latest/GoogleSans.min.css">
+<script src="https://cdn.jsdelivr.net/gh/delnegend/toGoogleStyle.min.js@latest/toGoogleStyle.min.js"></script>
 ```
-
-## Import phông trong thư mục GoogleSans vào website ([hướng dẫn](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face))
-
 
 ## Gán 1 class bất kỳ vào element chứa text cần convert thành GoogleStyle, ví dụ
 
@@ -17,7 +15,7 @@
 <span class=".toGoogleStyle">Lorem Ipsum...</span>
 ```
 
-## Chạy hàm này
+## Chạy hàm này ở đâu đó thì tuỳ
 ```javascript
 toGoogleStyle.init('<tên class>','<cỡ chữ>','<kiểu chữ>')
 ```
